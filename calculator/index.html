@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <title>Calculator</title>
+    <!-- bootstrap cdn for css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      .cal-head {
+        width: 300px;
+        margin: auto;
+      }
+      .cal-btn {
+        width: 70px;
+        background: black;
+        color: white;
+      }
+    </style>
+    <header class="text-center pt-3">
+      <h1>Calculator</h1>
+      <hr />
+    </header>
+    <main class="text-center">
+      <section>
+        <div class="cal-head">
+          <input class="p-2 pb-5 w-100" type="text" id="text-area" />
+        </div>
+        <div class="cal-body">
+          <div>
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              onclick="calcutate(this.value)"
+              value="1"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="2"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="3"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="+"
+              onclick="calcutate(this.value)"
+            />
+          </div>
+          <div>
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="4"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="5"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="6"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="-"
+              onclick="calcutate(this.value)"
+            />
+          </div>
+          <div>
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              onclick="calcutate(this.value)"
+              value="7"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="8"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="9"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="*"
+              value="*"
+              onclick="calcutate(this.value)"
+            />
+          </div>
+          <div>
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="C"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="0"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="="
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="/"
+              onclick="calcutate(this.value)"
+            />
+            <input
+              class="cal-btn p-2 mt-1"
+              type="button"
+              value="del"
+              onclick="calcutate(this.value)"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
